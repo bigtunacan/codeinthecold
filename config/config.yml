@@ -1,0 +1,3 @@
+development:
+  database: sqlite://../nomnom.db
+  cipher: s0Fuck1ngs3cur3

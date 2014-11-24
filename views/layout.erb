@@ -1,0 +1,130 @@
+<html class="wf-proximanova-i3-active wf-proximanova-i7-active wf-proximanova-n3-active wf-proximanova-n7-active wf-active" lang="en"><head>
+<!-- 
+TODO: 
+
+#17 Sky And Snow Palette
+http://www.webdesigndev.com/web-development/40-cold-colour-palettes-for-winter-inspired-web-designs
+
+-->
+    <meta charset="utf-8">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="Code In The Cold" name="author">
+    <meta content="Copyright (c) 2014-2015 Code In The Cold" name="copyright">
+    <meta content="Code In The Cold is a 48 hour hackathon for Iowa software and hardware hackers." name="description">
+    <meta content="auto" name="view-js">
+
+    <title>2015 Code In The Cold - Hackathon</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rails Rumble - Blog" href="http://blog.railsrumble.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="Rails Rumble - Jobs" href="http://railsrumble.com/jobs.xml">
+
+    <link href="css/foundation.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/joe.css" media="screen" rel="stylesheet" type="text/css">
+    <!--[if (lt IE 9) | (IEMobile)]>
+      <link href="https://d4nnn7wspfa3h.cloudfront.net/assets/lib/gridset-ie-ad0b4fcb67bcf914d4969a8748e9a042.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+<!-- TODO: See if we even need this -->
+    <script src="js/app.min.js" type="text/javascript"></script>
+
+<!-- TODO: See if we even need this -->
+  <script src="js/hello.js" type="text/javascript"></script>
+
+  <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src="js/foundation.min.js" type="text/javascript"></script>
+
+</head>
+  <body>
+      <div id="top" class="clearfix">
+        <div class="wrapper">
+          <div id="account">
+              <div class="btn-group">
+                <a class="btn btn-highlight btn-small dropdown-toggle" data-toggle="dropdown" href="#">
+                  Sign In <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/auth/heroku">With Heroku</a></li>
+                  <li><a href="/auth/twitter">With Twitter</a></li>
+                </ul>
+              </div>
+          </div>
+
+          <div id="rules-conduct">
+            <a href="/rules">Rules</a> ·
+            <a href="/conduct">Conduct</a>
+          </div>
+
+          <div id="dates">
+              <span>
+                <span>Registration</span> Dec 1 — 31
+              </span>
+
+              <span>
+                <span>Competition</span> Jan 24 — 26
+              </span>
+
+              <span>
+                <span>Judging</span> Jan 27 — 31
+              </span>
+          </div>
+        </div>
+      </div>
+
+
+    <header id="header" class="clearfix">
+      <div class="wrapper">
+        <div class="t1 da1-da2">
+          <a id="logo" href="/" title="Rails Rumble">
+            <img alt="Rr-logo-small" src="snowflake_tmp.png"><sup>2015</sup>
+          </a>
+        </div>
+
+        <nav class="t2-t5 da3-da6">
+          <a href="/entries" class="t2 da3 ">
+            Browse the <span class="noun">Entries</span>
+          </a>
+
+          <a href="/organizers" class="t3 da4 ">
+            Meet the <span class="noun">People</span>
+          </a>
+
+          <a href="/blog" class="t4 da5">
+            Read the <span class="noun">Blog</span>
+          </a>
+
+          <a href="/jobs" class="t5 da6 ">
+            Explore the <span class="noun">Job Board</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+</div>
+
+<div id="content" class="wrapper clearfix">
+  <%= yield %>
+</div>
+
+    <footer id="footer" class="clearfix">
+      <div class="wrapper">
+        <nav>
+          <a href="/jobs">Job Board</a>
+          <a href="/contact">Contact</a>
+          <a href="/about">FAQ</a>
+          <a href="/help">Help</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/rules">Rules</a>
+          <a href="/terms">Terms</a>
+          <a href="/conduct">Conduct</a>
+        </nav>
+
+        © 2014 Code in the Cold, LLC
+      </div>
+    </footer>
+
+    <!-- TODO - Check if this is really needed -->
+    <script src="js/gridset.js" type="text/javascript"></script>
+  
+
+</body>
+</html>
