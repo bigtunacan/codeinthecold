@@ -22,7 +22,7 @@ get '/jobs' do
 end
 
 get '/organizers' do
-  erb :organizers
+  erb :organizers, :layout => :foobar
 end
 
 get '/contestants' do

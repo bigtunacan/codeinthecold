@@ -1,3 +1,33 @@
-h1.poo{
+h1.blog{
   color: #FFFFFF
 }
+
+h2.people{
+  color: #FFFFFF;
+  font-size: 20;
+  border: 0px;
+  margin: 0px
+}
+
+p.people{
+  color: #D5D5D5;
+  font-size: 14;
+  border: 0px
+}
+a.people{
+  color: #FFB500;
+  font-size: 14;
+  border: 0px
+}
+
+/*.row.people{*/
+  /*width: 100%;*/
+
+.fullWidth {
+   /*width: 100%;*/
+   margin-left: 15%;
+   margin-right: auto;
+   /*max-width: initial;*/
+}
+
+/*}*/

@@ -684,12 +684,6 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     *zoom: 1;
     *margin-left: .3em;
 }
-.btn-group:before, .btn-group:after {
-    display: table;
-    content: ""}
-.btn-group:after {
-    clear: both;
-}
 .btn-group:first-child {
     *margin-left: 0;
 }
@@ -949,16 +943,6 @@ form .input-prepend .add-on {
     background-color: #FFDDDD;
     border: 1px solid red;
 }
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
 .clickable {
     cursor: pointer;
 }
@@ -1130,9 +1114,6 @@ body {
 #header {
     margin-top: 20px;
     margin-top: 2rem;
-    background: url(
-https://d4nnn7wspfa3h.cloudfront.net/assets/header-background-717dd4194bb2af153f94e4feb5d2ee8e.png
-);
     padding-top: 25px;
     padding-top: 2.5rem;
     padding-bottom: 15px;
@@ -1425,9 +1406,6 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/header-background-717dd4194bb2af153f
     margin: 14px 0;
 }
 #admin #stats div {
-    background: url(
-https://d4nnn7wspfa3h.cloudfront.net/assets/header-background-717dd4194bb2af153f94e4feb5d2ee8e.png
-);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -2014,32 +1992,32 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
 #marketing #sponsors>div {
     margin: 0 -30px;
 }
-#marketing #sponsors div.row {
+#marketing #sponsors {
     text-align: center;
 }
-#marketing #sponsors div.row div a img, #marketing #sponsors div.row div a span {
+#marketing #sponsors div a img, #marketing #sponsors div a span {
     display: inline-block;
     height: auto;
     max-height: 100%;
     max-width: 100%;
     vertical-align: middle;
 }
-#marketing #sponsors div.row div a:hover {
+#marketing #sponsors div a:hover {
     text-decoration: none;
 }
-#marketing #sponsors div.row div .well {
+#marketing #sponsors div .well {
     padding: 15px 15px;
 }
-#marketing #sponsors div.row div .well a span {
+#marketing #sponsors div .well a span {
     color: #ffffff;
 }
-#marketing #sponsors div.row div .well a span span {
+#marketing #sponsors div .well a span span {
     color: #08aeb5;
 }
-#marketing #sponsors div.row div .well a:hover span span {
+#marketing #sponsors div .well a:hover span span {
     text-decoration: underline;
 }
-#marketing #sponsors div.row .span-3 {
+#marketing #sponsors .span-3 {
     display: inline-block;
     height: 250px;
     margin: 15px auto;
@@ -2047,7 +2025,7 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
     text-align: center;
     width: 483px;
 }
-#marketing #sponsors div.row .span-2 {
+#marketing #sponsors .span-2 {
     display: inline-block;
     height: 125px;
     margin: 15px auto;
@@ -2055,13 +2033,13 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
     text-align: center;
     width: 312px;
 }
-#marketing #sponsors div.row .span-2 div a span {
+#marketing #sponsors .span-2 div a span {
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 20px;
     line-height: 2.0rem;
 }
-#marketing #sponsors div.row .span-1 {
+#marketing #sponsors .span-1 {
     display: inline-block;
     height: 105px;
     margin: 15px auto;
@@ -2069,7 +2047,7 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
     text-align: center;
     width: 226px;
 }
-#marketing #sponsors div.row .span-1 div a span {
+#marketing #sponsors .span-1 div a span {
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 18px;
@@ -2249,108 +2227,6 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
 #team #offers tr+tr td {
     border-top: 1px solid #2A2A2A;
 }
-#organizers .center {
-    font-size: 15px;
-    line-height: 15px;
-    margin: 24px 0 48px 0;
-}
-#organizers .row {
-    clear: both;
-    height: 190px;
-}
-#organizers .row .organizer {
-    float: left;
-    width: 350px;
-}
-#organizers .row .organizer .top {
-    clear: both;
-    height: 106px;
-}
-#organizers .row .organizer .top img {
-    border: 3px solid white;
-    float: left;
-    height: 100px;
-    width: 100px;
-}
-#organizers .row .organizer .top div {
-    margin-left: 124px;
-}
-#organizers .row .organizer .top div h1 {
-    font-size: 20px;
-    font-size: 2.0rem;
-    margin: 0;
-}
-#organizers .row .organizer .top div h2 {
-    color: #FFB500;
-    font-size: 12px;
-    font-size: 1.2rem;
-    margin: 0;
-    text-transform: uppercase;
-}
-#organizers .row .organizer .top div p {
-    margin: 0;
-}
-#organizers .row .organizer .top div p a {
-    display: block;
-    font-size: 14px;
-    font-size: 1.4rem;
-}
-#organizers .row .organizer .bottom {
-    clear: both;
-    font-size: 14px;
-    font-size: 1.4rem;
-    margin-top: 12px;
-}
-#organizers .row .organizer+.organizer {
-    margin-left: 21px;
-}
-#organizers .row+.row {
-    margin-top: 48px;
-}
-#organizer-alumni {
-    margin-top: 50px;
-}
-#organizer-alumni .center {
-    font-size: 15px;
-    line-height: 15px;
-    margin: 24px 0 48px 0;
-}
-#organizer-alumni .alumni {
-    border: 0;
-    display: block;
-    float: left;
-    margin: 0 20px 24px 0;
-    text-align: center;
-    width: 226px;
-}
-#organizer-alumni .alumni .img {
-    background: url(https://d4nnn7wspfa3h.cloudfront.net/assets/header-background-717dd4194bb2af153f94e4feb5d2ee8e.png);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    display: inline-block;
-    height: 128px;
-    padding: 8px;
-    width: 128px;
-}
-#organizer-alumni .alumni .img img {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    height: auto;
-    width: 100%;
-    text-align: center;
-}
-#organizer-alumni .alumni span+span {
-    display: block;
-    font-size: 15px;
-    height: 30px;
-    line-height: 15px;
-    margin-top: 10px;
-    overflow: hidden;
-    text-align: center;
-    width: 226px;
-}
 #experts .center {
     font-size: 15px;
     line-height: 15px;
@@ -2395,53 +2271,10 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
 #experts .nothing {
     margin: 75px 0 75px 0;
 }
-#people .center {
-    font-size: 15px;
-    line-height: 15px;
-    margin: 24px 0 48px 0;
-}
-#people .person {
-    border: 0;
-    display: block;
-    float: left;
-    margin: 0 20px 24px 0;
-    text-align: center;
-    width: 165px;
-}
-#people .person .img {
-    background: url(https://d4nnn7wspfa3h.cloudfront.net/assets/header-background-717dd4194bb2af153f94e4feb5d2ee8e.png);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    display: inline-block;
-    height: 80px;
-    padding: 8px;
-    width: 80px;
-}
-#people .person .img img {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    height: auto;
-    width: 100%}
-#people .person span+span {
-    display: block;
-    font-size: 15px;
-    height: 30px;
-    line-height: 15px;
-    margin-top: 10px;
-    overflow: hidden;
-    text-align: center;
-    width: 165px;
-}
-#people .nothing {
-    margin: 75px 0 75px 0;
-}
 #user #details {
     margin: 14px 0;
 }
 #user #details .img {
-    background: url(https://d4nnn7wspfa3h.cloudfront.net/assets/header-background-717dd4194bb2af153f94e4feb5d2ee8e.png);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -2463,7 +2296,6 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
     margin: 0 0 0 100px;
 }
 #user #details.with-headshot .img {
-    background: url(https://d4nnn7wspfa3h.cloudfront.net/assets/header-background-717dd4194bb2af153f94e4feb5d2ee8e.png);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -2488,5 +2320,3 @@ https://d4nnn7wspfa3h.cloudfront.net/assets/drag-handle-8753797a3384bf506c373521
     height: 60px;
     margin-top: 9px;
 }
-
-
