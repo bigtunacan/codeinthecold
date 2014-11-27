@@ -2,6 +2,7 @@ require 'config/config'
 require 'base64'
 require 'rubygems'
 require 'sinatra'
+require 'rack-flash'
 
 #TODO:  The following really only need in dev
 require 'byebug'
@@ -12,6 +13,8 @@ Dir["./routes/*.rb"].each{|file| require file}
 
 enable :sessions
 set :sessions, :expire_after => 3600
+use Rack::Flash
+
 # TODO: get the database stuff setup
 #case ENV['sinenv']
 #when 'dev'
@@ -60,14 +63,14 @@ post '/auth/auth' do
       session[:password] = params["password"]
       redirect "/"
     else
-      errors << "Invalid username or password combination"
+      flash[:notice] = "Invalid username or password combination"
       status 401 #unauthorized
-      redirect "/auth/unauthorized"
+      redirect "/auth/signin"
     end
   else
-    errors << "Invalid username or password combination"
     status 401 #unauthorized
-    redirect "/auth/unauthorized"
+    flash[:notice] = "Invalid username or password combination"
+    redirect "/auth/signin"
   end
 
 end

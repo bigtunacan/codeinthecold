@@ -16,6 +16,9 @@
 
   <div class="login-card">
     <h1>Log-in</h1><br>
+    <% if flash[:notice] %>
+      <h2><%= flash[:notice] %></h2><br>
+    <% end %>
   <form action="/auth/auth" method="post">
     <input type="text" name="user" placeholder="Username">
     <input type="password" name="pass" placeholder="Password">

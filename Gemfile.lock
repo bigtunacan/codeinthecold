@@ -37,6 +37,8 @@ GEM
     parslet (1.6.2)
       blankslate (>= 2.0, <= 4.0)
     rack (1.5.2)
+    rack-flash3 (1.0.5)
+      rack
     rack-protection (1.5.3)
       rack
     sequel (4.16.0)
@@ -63,6 +65,7 @@ DEPENDENCIES
   carrierwave
   csscss
   gibberish
+  rack-flash3
   sequel
   sinatra
   sqlite3
