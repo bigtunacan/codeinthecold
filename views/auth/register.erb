@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Register - CodeInTheCold</title>
+
+  <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+  <link rel="stylesheet" href="../css/login.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="login-card">
+    <h1>Register</h1><br>
+  <form action="/auth/register" method="post">
+    <input type="text" name="user" placeholder="Username">
+    <input type="password" name="pass" placeholder="Password">
+    <input type="password" name="confirm" placeholder="Confirm">
+    <input type="email" name="email" placeholder="email@foo.com">
+
+    <select name="registration_type">
+      <option value="contestant" selected="selected">Contestant</option>
+      <option value="judge">Judge</option>
+      <option value="mentor">Mentor</option>
+    </select>
+
+    <input type="submit" name="login" class="login login-submit" value="login">
+  </form>
+
+</div>
+
+<!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+
+</body>
+
+</html>

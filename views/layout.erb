@@ -21,6 +21,7 @@ http://www.webdesigndev.com/web-development/40-cold-colour-palettes-for-winter-i
     <link href="css/foundation.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/main.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/joe.css" media="screen" rel="stylesheet" type="text/css">
+    <!--<link href="css/login.css" media="screen" rel="stylesheet" type="text/css">-->
     <!--[if (lt IE 9) | (IEMobile)]>
       <link href="https://d4nnn7wspfa3h.cloudfront.net/assets/lib/gridset-ie-ad0b4fcb67bcf914d4969a8748e9a042.css" media="screen" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -33,15 +34,28 @@ http://www.webdesigndev.com/web-development/40-cold-colour-palettes-for-winter-i
 
   <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
   <script src="js/foundation.min.js" type="text/javascript"></script>
+<!--  <script src="js/login.js"></script> -->
 
 </head>
   <body>
       <div id="top" class="clearfix">
         <div class="wrapper">
           <div id="account">
-              <div class="btn-group">
-                <a class="btn btn-highlight btn-small dropdown-toggle" data-toggle="dropdown" href="#">
-                  Sign In <span class="caret"></span>
+            <div class="btn-group">
+                <%if session[:user]%>
+                  <a class="btn btn-highlight btn-medium <%= admin_logout_button %>" data-toggle="dropdown" href="/auth/logout">
+                    Logout
+                  </a>
+                  <%if role == "admin"%>
+                    <a class="btn btn-highlight btn-medium dropdown-toggle" data-toggle="dropdown" href="/auth/logout">
+                      Admin
+                    </a>
+                  <%end%>
+                <%else%>
+                  <a class="btn btn-highlight btn-medium dropdown-toggle" data-toggle="dropdown" href="/auth/signin">
+                    Sign In 
+                  </a>
+                <%end%>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="/auth/heroku">With Heroku</a></li>
