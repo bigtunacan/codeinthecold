@@ -75,11 +75,6 @@ post '/auth/auth' do
 
 end
 
-# TODO
-get "/auth/unauthorized" do
-
-end
-
 get '/auth/signin' do
   erb :"auth/signin", :layout => false
 end
