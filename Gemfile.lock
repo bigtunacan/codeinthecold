@@ -42,6 +42,7 @@ GEM
       rack
     rack-protection (1.5.3)
       rack
+    rdiscount (2.1.7.1)
     sequel (4.16.0)
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -68,6 +69,7 @@ DEPENDENCIES
   gibberish
   pg
   rack-flash3
+  rdiscount
   sequel
   sinatra
   sqlite3

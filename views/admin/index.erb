@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Admin - CodeInTheCold</title>
+
+  <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+  <link rel="stylesheet" href="../css/login.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="blog-card">
+    <h1>Create Post</h1><br>
+    <% if flash[:notice] %>
+      <h2><%= flash[:notice] %></h2><br>
+    <% end %>
+  <form action="/admin/blog" method="post">
+    <input type="text" name="title" placeholder="Title">
+    <textarea name="body" rows="10" cols="30" placeholder="Body (Uses Markdown Syntax)"></textarea>
+
+    <select name="category">
+      <option value="blog_post" selected="selected">Blog Post</option>
+      <option value="job_posting">Job Posting</option>
+      <option value="home_page">Home Page Message</option>
+    </select>
+
+    <input type="submit" name="submit" class="login login-submit" value="submit">
+  </form>
+
+</div>
+
+<!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+
+</body>
+
+</html>

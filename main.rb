@@ -33,7 +33,27 @@ get '/entries' do
 end
 
 #TODO:
+get '/admin/blog' do
+  'Coming soon...'
+end
+
+#TODO: Add some validation and other goodness
+# eventually, but for now this will work.
+post '/admin/blog' do
+  user_id = $DB[:users].first(:username => session["user"])[:id]
+  $DB[:blog_postings].insert(:user_id => user_id, :title => params["title"], :body => params["body"], :category => params["category"], :created => Time.now.to_s)
+  flash[:notice] = "#{params["category"]} entry created."
+  redirect "/admin/index"
+end
+
+#TODO:
 get '/blog' do
+  byebug
+  posts = $DB[:blog_postings].where(:category => "blog_post").order(Sequel.desc(:created_at))
+  posts.each do |post|
+    #TODO: Render blog posts from markdown here...
+  end
+
   erb :blog
 end
 
@@ -100,8 +120,9 @@ get '/auth/twitter' do
 end
 
 #TODO:
-get '/auth/admin' do
-  'Coming Soon'
+get '/admin/index' do
+  erb :"admin/index", :layout => false
+  #erb :"auth/register", :layout => false
 end
 
 #TODO:

@@ -5,8 +5,9 @@ end
 
 def vars
   user = $DB[:users][:username => session[:user]]
-  $config[:role] = user[:role] if user
-  $config
+  # TODO: Come back to this later if we still need it
+  #$config[:role] = user[:role] if user
+  #$config
 end
 
 helpers do
@@ -16,6 +17,15 @@ helpers do
       return ""
     else
       "dropdown-toggle"
+    end
+  end
+
+  def role
+    user = $DB[:users][:username => session[:user]]
+    if user
+      return user[:role]
+    else
+      nil
     end
   end
 end
